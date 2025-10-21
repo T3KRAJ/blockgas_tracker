@@ -20,8 +20,12 @@ Block Gas Tracker is a Bun-based TypeScript server that streams real-time block 
 	 ```bash
 	 bun install
 	 ```
-2. Set environment variables for each chain's WebSocket RPC URL (see below).
-3. Start the server:
+2. Copy `.env.example` to `.env`:
+	 ```bash
+	 cp .env.example .env
+	 ```
+3. Configure your environment by updating the `.env` file with your WebSocket RPC URLs for each chain (see Environment Variables section below).
+4. Start the server:
 	 ```bash
 	 bun run server.ts
 	 ```
